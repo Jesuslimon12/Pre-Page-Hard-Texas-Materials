@@ -1,0 +1,35 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 95%;
+    border-top: 1px solid #CBD5E1;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer__info{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.footer__info, .footer__page{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #475569;
+}
+.footer__page{
+    text-decoration: none;
+}
+.footer__icon{
+    width: 1.2rem;
+    height: 1.4rem;
+}
+
