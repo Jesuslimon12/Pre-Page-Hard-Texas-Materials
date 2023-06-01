@@ -58,7 +58,7 @@
     font-weight: 800;
     font-size: 12px;
     line-height: 15px;
-    transform: translateY(-7rem);
+    transform: translateY(-7.5rem);
     opacity: 0;
     transition: all .3s;
     color: #EF4444;
@@ -94,5 +94,13 @@
     line-height: 18px;
     color: #FFFFFF;
     cursor: pointer;
+    transition: all .2s;
 }
 
+.btn-submit:hover{
+    background: #0E3C89;
+}
+
+.btn-submit:active{
+    background: #001354;
+}

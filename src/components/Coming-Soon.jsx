@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import axios from 'axios';
 import '../styles/Coming-Soon.css'
 import '../styles/Form.css'
-import Icon_Logo from '../img/logo.svg'
+import Icon_Logo from '../img/HTM_logo.svg'
 import Icon_Shapes from '../img/shapes.svg'
 
 
@@ -61,7 +61,7 @@ export default function Coming_Soon() {
 
   const handleSubmit = event => {
     event.preventDefault();
-    setServerState({ submitting: true });
+    /*setServerState({ submitting: true });
     axios({
       method: "POST",
       url: "https://formspree.io/f/xgebdnwy",
@@ -72,7 +72,8 @@ export default function Coming_Soon() {
     })
     .catch(r => {
       handleServerResponse(false, r.response.data.error);
-    });
+    });*/
+    nextStep(2)
   }
 
   
@@ -91,13 +92,13 @@ export default function Coming_Soon() {
             <span className='heading-secondary'>Our online portal is</span>
             <h1  className='heading-primary'>Coming Soon!</h1>
             <p  className='content-msg'>Enter your email to be notified when we open and you will receive a <b className='bold'>5% DISCOUNT </b>on your first order!</p>
-            <a href='#' onClick={() => nextStep(1)} className='btn-hero'>Notify Me</a>
+            <a href='#' onClick={() => nextStep(1)} className='btn-hero margin-top-big'>Notify Me</a>
           </div>
 
           <div className={`content ${step === 1 ? 'active' : ''}`} id='form' >
             <p  className='content-msg'>To be notified when our site launches and secure your <b className='bold'>5%  discount, </b> please fill in your name and email below. Thank you for your interest!</p>
             
-            <form onSubmit={handleSubmit} className='form'>
+            <form onSubmit={handleSubmit} className='form margin-top-big'>
               <div className="form__row">
                   <div className="form__group">
                       
@@ -124,7 +125,7 @@ export default function Coming_Soon() {
 
           <div className={`content ${step === 2 ? 'active' : ''}`} id='registered'>
             <img src={Icon_Shapes} alt="Icon Shape" className='icon'/>
-            <p  className='content-msg'>Thank you for your interest! Keep an eye on your inbox at <b className='bold'>{values.email} </b> for the official launch of Hard Texas Materials.</p>
+            <p  className='content-msg margin-top-big'>Thank you for your interest! Keep an eye on your inbox at <b className='bold'>{values.email} </b> for the official launch of Hard Texas Materials.</p>
           </div>
 
 

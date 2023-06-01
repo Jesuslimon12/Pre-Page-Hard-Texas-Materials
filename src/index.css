@@ -7,14 +7,26 @@
 
 html{
   scroll-behavior: smooth;
-  font-size: 50%;
+  font-size: 62.5%; 
 }
 
-@media only screen and (max-width: 100em) { 
+@media only screen and (max-width: 33.75em) { /*Smart-Phone*/
   html{
-    font-size: 37.5%; /*1 rem = 6px, 6/16 = 37.5%*/
+    font-size: 31.25% !important; /*1 rem = 5px, 5/16 = 31.25%*/
   }
- };   
+}
+
+@media only screen and (max-width: 100em) { /*Desktop*/
+  html{
+    font-size: 50%; /*1 rem = 8px, 8/16 = 50%*/
+  }
+}
+
+
+
+
+
+
 
 
 body{
