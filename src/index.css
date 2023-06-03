@@ -8,10 +8,10 @@
 html{
   scroll-behavior: smooth;
   font-size: 62.5%;/* 62.5%*/
- 
+  -webkit-text-size-adjust: none; /* none for no scaling */
 }
- /*1 rem = 8px, 8/16 = 50%*/ /*Desktop*/
-@media only screen and (max-width: 1600px) {
+ /*1 rem = 8px, 8/16 = 50%*/ /*Desktop 1600px*/
+@media only screen and (max-width: 100em) {
   html{
     font-size: 50%;
   }
@@ -19,11 +19,10 @@ html{
 }
 
 
-/*1 rem = 5px, 5/16 = 31.25%*/  /*Smart-Phone*/
+/*1 rem = 5px, 5/16 = 31.25%*/  /*Smart-Phone 480px*/
 @media only screen and (max-width: 30em) {
   html{
     font-size: 31.25%; 
-    -webkit-text-size-adjust: none; /* none for no scaling */
   }
 
 
@@ -40,7 +39,6 @@ body{
  
  
 }
-
 
 .main-content{
   height: 100vh;
