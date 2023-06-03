@@ -1,6 +1,7 @@
 .form{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .form__row{
@@ -11,9 +12,10 @@
 }
 
 .form__group{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    position: relative;
   
 }
 
@@ -53,12 +55,13 @@
 
 
 .form__label{
+    position: absolute;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
     font-size: 12px;
     line-height: 15px;
-    transform: translateY(-7.5rem);
+    top: -20px;
     opacity: 0;
     transition: all .3s;
     color: #EF4444;

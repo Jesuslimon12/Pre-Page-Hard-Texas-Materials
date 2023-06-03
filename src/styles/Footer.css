@@ -1,8 +1,5 @@
 .footer{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+
     width: 95%;
     border-top: 1px solid #CBD5E1;
     padding: 4rem 0;
