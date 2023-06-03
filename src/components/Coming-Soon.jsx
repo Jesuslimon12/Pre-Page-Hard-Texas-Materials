@@ -103,12 +103,12 @@ export default function Coming_Soon() {
                   <div className="form__group">
                       
                       <input type="text" className="form__input" id="name" name="first_name" value={values.first_name} onChange={handleChange} placeholder="First Name" required/>
-                      <label htmlFor="name" className="form__label">First Name</label>
+                      <label htmlFor="name" className="form__label">First Name.</label>
                   </div>
 
                   <div className="form__group">
                       <input type="text" className="form__input" id="last_name" name="last_name" value={values.last_name} onChange={handleChange} placeholder="Last Name"  required/>
-                      <label htmlFor="last_name" className="form__label">Last Name</label>       
+                      <label htmlFor="last_name" className="form__label">Last Name.</label>       
                   </div>
               </div>
 

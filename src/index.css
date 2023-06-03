@@ -6,7 +6,6 @@
 }
 
 html{
-  scroll-behavior: smooth;
   font-size: 62.5%;/* 62.5%*/
   -webkit-text-size-adjust: none; /* none for no scaling */
 }

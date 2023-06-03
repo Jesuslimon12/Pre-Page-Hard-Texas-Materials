@@ -1,14 +1,12 @@
 .form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .form__row{
     display: inline-flex;
     gap: 2rem;
-    margin-bottom: 2rem;
-    
 }
 
 .form__group{
@@ -16,6 +14,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    transition: all .3s;
   
 }
 
@@ -50,6 +49,10 @@
 .form__input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
     -webkit-text-fill-color: #002768;
+}
+
+.form__group:has( [type="email"]:focus) {
+    margin-top: 15px;
 }
 
 
