@@ -86,7 +86,7 @@ export default function Coming_Soon() {
             <img src={Icon_Logo} alt="Logo" className='logo'/>
         </div>
 
-        <div className='coming-soon__content-box' style={css}>
+        <div className='content-box' style={css}>
 
           <div className={`content ${step === 0 ? 'active' : ''}`} id='notify' >
             <span className='heading-secondary'>Our online portal is</span>

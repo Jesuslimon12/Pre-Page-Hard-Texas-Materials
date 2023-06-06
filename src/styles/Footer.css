@@ -14,6 +14,12 @@
     margin-bottom: 1.5rem;
 }
 
+.footer__info li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .footer__info, .footer__page{
     font-family: 'Inter';
     font-style: normal;
@@ -26,7 +32,7 @@
     text-decoration: none;
 }
 .footer__icon{
-    width: 1.2rem;
-    height: 1.4rem;
+    max-width: 100%;
+    object-fit: cover;
 }
 
